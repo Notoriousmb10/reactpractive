@@ -28,6 +28,15 @@ const Results = () => {
     }
   };
 
+  useEffect(() => {
+    console.log('Component mounted or updated');
+  
+    return () => {
+      console.log('Component unmounted');
+    };
+  }, []); // Replace dependencies with relevant state/props
+  
+
   // useEffect(() => {
   //   // fetchData();
   //   addUser();
